@@ -4,8 +4,7 @@ import "./homePage.scss";
 import { AuthContext } from "../../context/AuthContext";
 
 function HomePage() {
-
-  const {currentUser} = useContext(AuthContext)
+  const { currentUser } = useContext(AuthContext);
 
   return (
     <div className="homePage">
@@ -13,10 +12,8 @@ function HomePage() {
         <div className="wrapper">
           <h1 className="title">Find Real Estate & Get Your Dream Place</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-            explicabo suscipit cum eius, iure est nulla animi consequatur
-            facilis id pariatur fugit quos laudantium temporibus dolor ea
-            repellat provident impedit!
+            Your journey to finding the perfect property begins here. Search
+            below to find the home that matches your dreams.
           </p>
           <SearchBar />
           <div className="boxes">

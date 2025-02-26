@@ -259,14 +259,16 @@ function SinglePage() {
                 </button>
               </>
             )}
-            {currentUser?.id === post.userId && ( // Show update and delete buttons only if the current user is the owner of the post
+            {currentUser?.id === post.userId && (
               <>
+                {/* 
                 <Link to={`/update/${post.id}`}>
                   <button className="updateButton">
                     <img src="/update.png" alt="" />
                     Update Post
                   </button>
-                </Link>
+                </Link> 
+                */}
                 <button onClick={handleDelete} className="deleteButton">
                   <img src="/delete.png" alt="" />
                   Delete Post
